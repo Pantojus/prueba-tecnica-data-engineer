@@ -5,3 +5,10 @@ class Persona:
 
     def presentation(self):
         print(f"Hola! Soy {self.nombre} y tengo {self.edad} años")
+
+
+# ------------Instancias------------
+
+nombre = 'Alberto'
+persona_1 = Persona(nombre, 20)
+persona_1.presentation()
