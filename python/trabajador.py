@@ -1,7 +1,7 @@
 from persona import Persona
 
 class Trabajador(Persona):
-    def __init__(self, nombre, edad, departamento, puesto):
+    def __init__(self, nombre, edad, departamento="Data", puesto="Analyst"): e
         super().__init__(nombre, edad)
         self.departamento = departamento
         self.puesto = puesto
