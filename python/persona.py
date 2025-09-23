@@ -3,8 +3,10 @@ class Persona:
         self.nombre = nombre
         self.edad = int(edad)
 
-# self.nombre es un atributo del objeto (cada instancia tiene su propio valor)
-# nombre es solo la variable local, que en este caso se pasa al constructor
+# Punto 4: 
+#'self.nombre' es un ATRIBUTO de la instancia (estado propio del objeto).
+#'nombre' es una VARIABLE local en el ámbito actual (no necesariamente ligada al objeto).
+#En métodos de instancia, 'self' referencia al objeto y 'self.nombre' accede a su estado.
 
     def presentation(self):
         print(f"Hola! Soy {self.nombre} y tengo {self.edad} años")
