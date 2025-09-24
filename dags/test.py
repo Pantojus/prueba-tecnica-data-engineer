@@ -18,4 +18,8 @@ with DAG(
     catchup=False
 ) as dag:
 
-    pass
+    # Punto 2: tareas start y end. Colocamos end despues de start
+    start = DummyOperator(task_id="start")
+    end = DummyOperator(task_id="end")
+
+    start >> end
