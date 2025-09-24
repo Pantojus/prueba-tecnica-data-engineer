@@ -35,7 +35,7 @@ with DAG(
     catchup=False
 ) as dag:
 
-    # Punto 2: tareas start y end. Colocamos end despues de start
+    # Punto 2: tareas start y end. Colocamos end despues de start (actualizada en el punto 4)
     start = DummyOperator(task_id="start")
     end = DummyOperator(task_id="end")
 
@@ -61,10 +61,10 @@ with DAG(
 
 
 # Punto 5:
-
-# - Una **Conexión** es un objeto de configuración que guarda credenciales
+#
+# - Una 'Conexión' es un objeto de configuración que guarda credenciales
 #   y parámetros para acceder a un sistema externo
-    
+#
 #       def conexion(session=None):   
 #       conn = Connection(
 #           conn_id='',
@@ -75,7 +75,7 @@ with DAG(
 #           port=8080,
 #           schema=''
 #       ).
-
-
-# - Un **Hook** es una clase en Airflow que implementa la lógica para interactuar con
-#   ese sistema externo. El Hook usa la Conexión para establecer la conexión real y ejecutar operaciones.
+#
+#
+# - Un 'Hook' es una clase en Airflow que implementa la lógica para interactuar con
+#   ese sistema externo. El 'Hook' usa la Conexión para establecer la conexión real y ejecutar operaciones.

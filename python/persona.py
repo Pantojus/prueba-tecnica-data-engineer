@@ -4,6 +4,7 @@ class Persona:
         self.edad = int(edad)
 
 # Punto 4: 
+#
 #'self.nombre' es un ATRIBUTO de la instancia (estado propio del objeto).
 #'nombre' es una VARIABLE local en el ámbito actual (no necesariamente ligada al objeto).
 #En métodos de instancia, 'self' referencia al objeto y 'self.nombre' accede a su estado.
