@@ -49,5 +49,12 @@ with DAG(
                 if j % 2 != 0:  # si es impar
                     tasks[j - 1] >> tasks[i - 1]
 
+
+    # Punto 4: Se me olvidó usar el nuevo operador
+    timediff_task = TimeDiffOperator(
+        task_id="timediff_task",
+        diff_date=datetime(2000, 1, 1)
+    )
+
     # Estructura del DAG
-    start >> tasks >> end
+    start >> tasks >> timediff_task >> end
