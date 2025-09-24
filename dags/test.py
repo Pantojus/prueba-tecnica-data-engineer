@@ -58,3 +58,24 @@ with DAG(
 
     # Estructura del DAG
     start >> tasks >> timediff_task >> end
+
+
+# Punto 5:
+
+# - Una **Conexión** es un objeto de configuración que guarda credenciales
+#   y parámetros para acceder a un sistema externo
+    
+#       def conexion(session=None):   
+#       conn = Connection(
+#           conn_id='',
+#           conn_type='',
+#           host='',
+#           login='',
+#           password='',
+#           port=8080,
+#           schema=''
+#       ).
+
+
+# - Un **Hook** es una clase en Airflow que implementa la lógica para interactuar con
+#   ese sistema externo. El Hook usa la Conexión para establecer la conexión real y ejecutar operaciones.
